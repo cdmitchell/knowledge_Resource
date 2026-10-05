@@ -964,35 +964,3 @@ Right to be forgotten is a concept implemented in various data protection laws, 
     data has been unlawfully processed
     There is legal obligation to erase the data
 ***********************************************************************************************
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
