@@ -236,6 +236,10 @@ Domain 2: Threats, Vulnerabilities, & Mitigations
        Downgrade
        Collision
        Birthday
+<<<<<<< HEAD
+=======
+     Digital forensics
+>>>>>>> bd315da (Added Ch 7 & 15 IOT consolidate domain commonality)
 
 **********************************N O T E S**************************************************
 
