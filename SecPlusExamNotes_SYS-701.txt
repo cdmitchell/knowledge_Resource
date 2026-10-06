@@ -38,11 +38,13 @@ Domain 2: Threats, vulnerabilities, & Mitigations
      Removable device
      Vulnerable software (Client-based vs. agentless)
      Unsupported systems & applications
+
      Unsecured networks:
        [Wireless | Wired | Bluetooth]
 
      Open service ports
      Default credentials
+
      Supply chain:
        Managed service providers (MSPs)
        Vendors
@@ -63,7 +65,7 @@ Domain 4: Security Operations
        Information-sharing organization
        Dark web
 
-**************N O T E S**********************************************************************
+**********************************N O T E S**************************************************
 Know key Threat Actors Attributes/characteristics:
   Internal/External
   Capability (Level of sophistication)
@@ -109,36 +111,36 @@ Domain 4: Security Operations
 
    4.7 Explain the importance of automation & orchestration related to secure operations.
       Use cases of automation & scripting:
-         [User | Resource] provisioning
-         Guard rails
-         Security groups
-         Ticket creation
-         Escalation
-         [En | dis]abling services & access
-         Continuous integration & ttesting
-         Integrations & Application programming interfaces (APIs)
+        [User | Resource] provisioning
+        Guard rails
+        Security groups
+        Ticket creation
+        Escalation
+        [En | dis]abling services & access
+        Continuous integration & ttesting
+        Integrations & Application programming interfaces (APIs)
 
       Benefits:
-         Efficiency/time saving
-         Enforcing baselines
-         Standard infrastructure configurations
-         Securely Scaling
-         Employee retention
-         Reaction time
-         Workforce multiplier
+        Efficiency/time saving
+        Enforcing baselines
+        Standard infrastructure configurations
+        Securely Scaling
+        Employee retention
+        Reaction time
+        Workforce multiplier
 
       Other considerations:
-         Complexity
-         Cost
-         Single point of failure
-         Technical debt
-         Ongoing supportability
+        Complexity
+        Cost
+        Single point of failure
+        Technical debt
+        Ongoing supportability
 
 Domain 5: security Program Management & Oversight
    5.1 Summarize elements of effective security governance
       Policies (software development lifecycle (SDLC))
 
-**************N O T E S**********************************************************************
+**********************************N O T E S**************************************************
 Know Secure SDLC:
   integrates security within the development process
   SDLC Phases:
@@ -201,26 +203,36 @@ Domain 4: Security Operations
      Permission assignments & implications
      Identity proofing
      Federation
-     Single sign-on (SSO), Lightweight Directory Access Protocol (LDAP), Open authorization (OAuth), Security Assertions Markup Language (SAML)
+
+     Single sign-on (SSO) Lightweight Directory Access Protocol (LDAP):
+       Open authorization (OAuth)
+       Security Assertions Markup Language (SAML)
+
      Interoperability
      Attestation
+
      Access controls:
-      [Mandatory, Discretionary, Role-based, Rule-based, Attribute-based, Time-of-day restrictions, Least privilege]
+       [Mandatory | Discretionary | Role-based | Rule-based | Attribute-based | Time-of-day restrictions | Least privilege]
+
      Multifactor authentication
       Implementation:
-       [Bio-meterics| (Hard/Soft) tokens| Security keys]
+        [Bio-meterics| (Hard/Soft) tokens| Security keys]
+
       Factors:
-       Something you [know | have | are ]
-       Somewhere you are
+        Something you [know | have | are ]
+        Somewhere you are
+
      Password concepts
-      Best practices:
-       [length| complexity| reuse| expiration| age]
+      Password Best practices:
+        [length| complexity| reuse| expiration| age]
+
       Password managers
       Passwordless
-     Privileged access management tools:
-      [Just-in-time persmissions | password vaulting| ephemeral credentials]
 
-**************N O T E S**********************************************************************
+     Privileged access management tools:
+       [Just-in-time persmissions | password vaulting| ephemeral credentials]
+
+**********************************N O T E S**************************************************
 Know SSO-related technologies:
   LDAP, OAuth, & SAML
   802.1X & EAP (Extensible Authentication Protocol)
@@ -270,7 +282,7 @@ Domain 4: Security Operations
   4.1 Given a scenario, apply common security techniques to computing resources.
      Hardening targets (Cloud infrastructure)
 
-**************N O T E S**********************************************************************
+**********************************N O T E S**************************************************
 Explain 3 major cloud service models:
   IaaS, PaaS, & SaaS
 Describe 4 major cloud deployment models:
@@ -338,13 +350,13 @@ Domain 2: Threats, Vulnerabilities, & Mitigations
      Decommissioning
 
      Hardening techniques:
-        Encryption
-        Installation of endpoint protection
-        Host-based firewall
-        Host-based Intrusion prevention systems (HIPS)
-        Disabling ports/protocols
-        Default password changes
-        Removal of unnecessary software
+       Encryption
+       Installation of endpoint protection
+       Host-based firewall
+       Host-based Intrusion prevention systems (HIPS)
+       Disabling ports/protocols
+       Default password changes
+       Removal of unnecessary software
 
 Domain 3: Security Architecture
   3.1 Compare & contrast security implications of different architecture models.
@@ -397,7 +409,7 @@ Domain 4:  Security Operations
 
      Endpoint detection & response (EDR)/extended detection & response (XDR)
 
-**************N O T E S**********************************************************************
+**********************************N O T E S**************************************************
 OS-based vulnerabilities (how choice of OS defaults, security configuration, & support impact security)
 Explain various types of vulnerabilities:
    HW vulnerabilities related to firmware, end-of-life HW, & Legacy HW
@@ -448,6 +460,7 @@ Domain 2: Threats, Vulnerabilities, & Mitigations
        Distributed denial-of-service (DDoS):
           Amplified
           Reflected
+
        Domain Name System (DNS) attacks
        Wireless
        On-path
@@ -465,6 +478,7 @@ Domain 3: Security Architecture
          Physical isolation (Air-gapped)
          Logical segmentation
          Software-defined networking (SDN)
+
        High availability
 
   3.2 Given a scenario, apply security principles to secure enterprise infrastructure.
@@ -485,6 +499,7 @@ Domain 3: Security Architecture
          Intrusion[Detection | Prevention] system
          Load balancer
          Sensors
+
        Port security:
          802.1X
          Extensible Authentication Protocol (EAP)
@@ -553,7 +568,7 @@ Domain 4:  Security Operations
       DLP
       Network Access Control (NAC)
 
-**************N O T E S**********************************************************************
+**********************************N O T E S**************************************************
 Infrastructure considerations:
   Device placement, attack surface, failure modes, connectivity, security zones, & device attributes
 Network Design concepts:
@@ -561,15 +576,22 @@ Network Design concepts:
 Choice of IPSec/TLS VPNs before choose other types of tunneling
 NAC, 802.1X, port Security, & VPN (how are they used in secure networks)
 NGFWs operate at Layers 4&7 (Transport & Application layers)
-NTWK appliances Jump servers, load balancers & load-balancing techniques, proxy servers, web filters, DLP, I[D|P]S, firewalls, & types of firewalls,ACLs
+NTWK appliances Jump servers, load balancers & load-balancing techniques, proxy servers, web filters, DLP, I[D|P]S, firewalls, & types of firewalls, ACLs
 Deception & Disruption techniques:
-  Honeyfiles, Honeytokens, Honeynets, Honeypots
+  Honey[files | tokens | nets | pots]
 Securing Services:
   QoS, DNS & email security, encryption via TLS to encapsulate protocols for secure transport,SNMP & monitoring services and systems, file integrity monitoring, & how
   network devices are hardened & their management interfaces protected
   Secure protocols (being able to suggest replacements for insecure)
   On-Path Attack, DNS, replay attacks, malicious code, denial-of-service attacks
   & how to identify, prevent & respond to each
+Email:
+  DKIM allows orgs to add content (DKIM-signature header) to messages to identify them as being from their domain.
+      Message is then verified using a public key stored in public DNS entries for DKIM-enabled orgs
+
+  SPF is an email authentication technique allowing orgs to publish a list of authorized servers.
+  DMARC is a protocol which employs SPF & DKIM to determine message authenticity;
+    using DMARC you can reject or quarantine messages not sent from DMARC-supporting sender.
 ***********************************************************************************************
 Ch 13 Wireless & Mobile Security
 --------------------------------
@@ -618,7 +640,7 @@ Domain 4:  Security Operations
          Cryptographic protocols
          Authentication protocols
 
-**************N O T E S**********************************************************************
+**********************************N O T E S**************************************************
 3 Major connection models:
   Cellular, Wi-Fi, & Bluetooth
   Beware of the Pros/Cons of each
@@ -683,7 +705,7 @@ Domain 4:  Security Operations
      Data sources
        [Vulnerability scans | Automated reports | Dashboards | Packet captures]
 
-**************N O T E S**********************************************************************
+**********************************N O T E S**************************************************
 Know Incident response process & common indicators
 Indicators:
   Account lockout, Blocked content, Impossible travel, Resource [consumption|inaccessibility], Out-of-cycle logging, Missing logs
@@ -827,10 +849,11 @@ Domain 5: security Program Management & Oversight
      Reporting and monitoring
        Initial
        Recurring
+
      Development
      Execution
 
-**************N O T E S**********************************************************************
+**********************************N O T E S**************************************************
 Explain difference between Centralized/Decentralized governance models
 Be familiar with the nature & purpose of polices related to INFOSEC:
   ISO2700[1|2], ISO27701, ISO31000 (Info/Cyber SEC, privacy, risk management)
@@ -869,6 +892,7 @@ Domain 5: Security Program Management & Oversight
 
   5.2 Explain elements of the risk management process.
      Risk identification
+
      Risk assessment
        [Ad hoc| Recurring| One-time| Continuous]
 
@@ -895,6 +919,7 @@ Domain 5: Security Program Management & Oversight
        [Transfer| Accept| [Exemption| Exception]| Avoid| Mitigate]
 
      Risk reporting
+
      Business impact analysis (BIA):
        Recovery [time| point] objective (RTO/RPO)
        Mean time to repair (MTTR)
@@ -911,7 +936,7 @@ Domain 5: Security Program Management & Oversight
        Data inventory & retention
        Right to be forgotten
 
-**************N O T E S**********************************************************************
+**********************************N O T E S**************************************************
 Risk occurs at the intersection of Threat & vulnerability
 Risk assessment is a process; performed several ways:
   One-time
