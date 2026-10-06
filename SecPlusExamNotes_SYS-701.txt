@@ -89,11 +89,16 @@ Ch 6 Application Security
 Domain 2: Threats, vulnerabilities, & Mitigations
    2.3 Explain various types of vulnerabilities
       Application:
-        (Memory inject, Buffer overflow, Malicious update)
-        Race conditions Time-of-[Check | Evaluation| Use]((TOC), (TOE), (TOU))
+        Memory inject
+        Buffer overflow
+        Malicious update
+
+        Race conditions:
+          Time-of-[Check | Evaluation| Use]((TOC), (TOE), (TOU))
 
       Web-based:
-        (Structured Query Language Inject(SQLi), Cross-site (XSS))
+        Structured Query Language Inject(SQLi)
+        Cross-site (XSS)
 
    2.4 Given a scenario, analyze indicatorsof malicious activity.
       Application attacks:
@@ -102,12 +107,13 @@ Domain 2: Threats, vulnerabilities, & Mitigations
 Domain 4: Security Operations
    4.1 Given a scenario, apply common security techniques to computing resources.
       Application security:
-        (Input validation, Secure cookies, Static code analysis, Code signing)
+        [Input validation | Secure cookies | Static code analysis | Code signing]
 
       Sandboxing
 
    4.3 Explain various activities associated with vulnerability management.
-      Identify methods (Application security, [Static | Dynamic] analysis, Package monitoring)
+      Identification methods
+        [Application security | [Static | Dynamic] analysis | Package monitoring]
 
    4.7 Explain the importance of automation & orchestration related to secure operations.
       Use cases of automation & scripting:
@@ -117,7 +123,7 @@ Domain 4: Security Operations
         Ticket creation
         Escalation
         [En | dis]abling services & access
-        Continuous integration & ttesting
+        Continuous integration & testing
         Integrations & Application programming interfaces (APIs)
 
       Benefits:
@@ -183,12 +189,63 @@ Know considerations for Automation:
      Technical Debt
      Ongoing supportability
 ***********************************************************************************************
+Ch 7 Cryptography & the PKI
+---------------------------
+Domain 1: General Security Concepts
+  1.4 Explain the importance of using appropriate cryptographic solutions.
+     Public key infrastructure (PKI)
+       [Public | Private] key
+       Key escrow
+
+     Encryption
+       Level:
+         [Full-disk | Partition | File | Volume | Database | Record]
+
+       Transport/communication
+       [Asymmetric | Symmetric]
+       Key exchange
+       Algorithms
+       Key length
+
+     Obsfucation:
+       Steganography
+
+     Hashing
+     Salting
+     Digital signatures
+     Key stretching
+     Blockchain
+     Open public ledger
+
+     Certificates:
+       Certificate authorities
+       Certificate revocation lists (CRLs)
+       Online Certificate Status Protocol (OCSP)
+       Self-signed
+       Third-party
+       Root of trust
+       Certificate signing request (CSR) generation
+       Wildcard
+
+Domain 2: Threats, Vulnerabilities, & Mitigations
+  2.3 Explain various types of vulnerabilities.
+     Cryptographic
+
+  2.4 Given a scenario, analyze indicators of malicious activity.
+     Cryptographic attacks
+       Downgrade
+       Collision
+       Birthday
+
+**********************************N O T E S**************************************************
+
+***********************************************************************************************
 Ch 8 Identity & Access Management
 ---------------------------------
 Domain 1: General Security Concepts
   1.2 Summarize fundamental security concepts.
      Authentication, Authorization, & Accounting (AAA)
-       Authenticating [people| systems]
+       Authenticating [people | systems]
        Authorization models
 
 Domain 2: Threats, Vulnerabilities, & Mitigations
@@ -717,6 +774,21 @@ Know:
 Mitigation & Recovery Process:
   allow/deny lists, isolation, quarantine, & ongoing monitoring of remediation efforts
 Explain RCA (Root Cause Analysis) & it's importance as part of Recovery/Preparation process
+***********************************************************************************************
+Ch 15 Digital Forensics
+-----------------------
+Domain 4: Security Operations
+  4.8 Explain appropriate incident response activities.
+     Digital forensics
+       Legal hold
+       Chain of custody
+       Acquisition
+       Reporting
+       Preservation
+       E-discovery
+
+**********************************N O T E S**************************************************
+
 ***********************************************************************************************
 Ch 16 Security Governance & Compliance
 --------------------------------------
