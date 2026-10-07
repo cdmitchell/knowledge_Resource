@@ -238,6 +238,64 @@ Domain 2: Threats, Vulnerabilities, & Mitigations
        Birthday
 
 **********************************N O T E S**************************************************
+Public key infrastructure (PKI) facilitates communication between 2 parties previously unknown to each other.
+ employs hierachy of trust permit combining asymetric, symmetric, hashing & digital certificates giving us hybrid cryptography.
+
+  [Public | Private] key
+
+  Key escrow employs a third party to sotre a protected copy of the key for use in an emergency.
+
+  Transport/communication
+    [Asymmetric              |             Symmetric]
+    -----------------------------------------------
+      RSA                    |     AES
+      public/private keys    |     shared secret key
+
+  Key exchange is the secure distribution of keys required to operate algorithms.
+    3 main methods of secure secret key (Symmetric) exchange:
+    --------------------------------------------------------
+    1. Offline Distribution (physical exchange)
+    2. Public Key Encryption
+    3. Diffie-Hellman (involves two large numbers s.t. 1 < g < p; where p is a prime & g an integer)
+
+  Algorithms:
+    AES
+    RSA algorithm depends on factoring large prime numbers
+
+  Key length make data more secure, but requires computational overhead
+  Steganography hides information within images
+  Hashing
+  Salting adds random generated value to each password before hashing
+
+  Digital signatures:
+    enforce non-repudiation
+    protects against malicious & un-intentional modification
+
+  Key stretching (involves salting & hashing) is used to create encryption keys form passwords
+     (e.g. thousands of iterations of salting & hashing to generate keys Password-Based Key Derivaton Function v2(PBKDF2))
+
+  Blockchainis a distributed & immutable ledger; creates a data store nobody can tamper with or destroy.
+  Open public ledger  stores records in a distributed manner among different systems located globally
+
+  Certificates provide assurance that the people communicating are truly who they claim to be;
+   it contains specific indentifying information governed by X.509 standard
+
+    Certificate authorities offer notarization services for digital certificates
+    Certificate revocation lists (CRLs) contain serial numbers of issued & revoked by CA including time & date;
+      as a result of needing to periodically download & cross-reference it introduces latency.
+
+    Online Certificate Status Protocol (OCSP) provides real-time certificate verification.
+    Self-signed certificates for use inside an organizatio utilizing its internal CA; primarily used for testing purposes.
+    Third-party
+    Root of trust
+    Certificate signing request (CSR) generation
+    Wildcard (*asterisk character) signifies certificated good for subdomains as well
+
+Cryptographic attacks
+  Downgrade attack used against secure communications such as TLS in an attempt to get the user to shift to less secure modes.
+  Collision
+  Birthday attack is a cryptographic hashes, based on the birthday theorem (x amount of people in a room share same month & day)
+    probability based
 
 ***********************************************************************************************
 Ch 8 Identity & Access Management
@@ -718,7 +776,7 @@ Domain 2: Threats, Vulnerabilities, & Mitigations
        Account lockout
        Concurrent session usage
        Blocked content
-       Impossible travell
+       Impossible travel
        Resource [consumption| inaccessibility]
        Out-of-cycle logging
        Published/documented
@@ -788,7 +846,13 @@ Domain 4: Security Operations
        E-discovery
 
 **********************************N O T E S**************************************************
-
+Legal hold is a notice informing org they must preserve data & records that might be modified or destroyed during normal operations.
+Chain of custody document detailing who, when, what, an artifact is handled.
+Acquisition relates to an artifacts order of volatility IOT preserve data or state (at the bit-for-bit level).
+  tools inclued (FTK, WinHex, & dd (LINUX))
+Reporting a summary of investigation findings, outlining process, tools, assumptions, & recommendations/conclusions.
+Preservation requires folliwng chain-of-custody processes as well as write blockers, forensic copies, & documented process & procedures.
+E-discovery process allowing each side of a legal case to obtain evidence from each other.
 ***********************************************************************************************
 Ch 16 Security Governance & Compliance
 --------------------------------------
