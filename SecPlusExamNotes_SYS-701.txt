@@ -96,6 +96,138 @@ Know Threat Intelligence provides valuable insight into the threat Landscape
 
       Dark web is a network run over standard internet connections using multiple layers of encryption to provide anonymous communication.
 ***********************************************************************************************
+Ch 3 Malicious Code
+-------------------
+Domain 2: Threats, vulnerabilities, and Mitigations
+  2.4 Given a scenario, analyze indicators of malicious activity.
+     Malware attacks
+       Ransomeware
+       Trojan
+       Worm
+       Spyware
+       Bloatware
+       Virus
+       Keylogger
+       Logic bomb
+       Rootkit
+**********************************N O T E S**************************************************
+Ransomeware, holds your computer hostage until attacker is paid
+Trojan downloaded software that actually has malicious code embedded within it
+Worm infects critical parts of a computer system
+Spyware application that spies on your computting habbits
+Bloatware pre-installed software on computer that uses up resources
+Virus spreads infects a system through human interaction (i.e. usb drive)
+Keylogger device or software that steals user credentials
+Logic bomb, malicious code that activates when the condition(s) are met.
+***********************************************************************************************
+Ch 4 Social Engineering and Password Attacks
+--------------------------------------------
+Domain 2: Threats, Vulnerabilities, & Mitigations
+  2.2 Explain common threat vectors and attack surfaces.
+     Human vectors/social engineering
+       Phishing
+       Vishing
+       Smishing
+       Misinformation/Disinformation
+       Impersonation
+       Business emaill compromise
+       Pretexting
+       Watering hole
+       Brand impersonation
+       Typosquatting
+
+  2.4 Given a scenario, analyze indicators of malicious activity.
+     Password attacks
+       Spraying
+       Brute force
+**********************************N O T E S**************************************************
+Phishing: email
+Vishing: phone/voice
+Smishing: text
+Misinformation/Disinformation: misunderstanding details vs blaitant lies
+Impersonation
+Business emaill compromise
+Pretexting, made-up scenario to justify why you're approaching an individual
+Watering hole, website employees frequently visit
+Brand impersonation
+Typosquatting, misspelled & slightly off errors within a url attackers
+Spraying using a single or small set of passwords against many accounts
+Brute force, trying different password variations until attacker succeeds
+***********************************************************************************************
+Ch 5 Security Assesment and Testing
+-----------------------------------
+Domain 4: Security Operations
+  4.3 Explain various activities associated with vulnerability management.
+     Identification methods
+       Vulnerability scans
+       Penetration testing
+       Responsible disclosure program
+       Bug bounty program
+       System/process audit
+
+     Analysis
+       Confirmation
+       Prioritize
+       Common Vulnerability Scoring System (CVSS)
+       Common Vulnerability Exposures (CVE)
+       Vulnerability classification
+       Exposure factor
+       Environmental variables
+       Industry/organizational impact
+       Risk tolerance
+
+     Vulnerability response and remediation
+       Patching
+       Insurance
+       Segmentation
+       Compensating controls
+       Exceptions and exemptions
+
+     Validation of remediation
+       Rescanning
+       Audit
+       Verification
+
+     Reporting
+
+  4.4 Explain security alerting and monitoring concepts and tools.
+     Tools
+       Security Content Automation Protocol (SCAP)
+       Vulnerability scanners
+
+  4.8 Explain appropriate incident response activities.
+     Threat hunting
+
+Domain 5: Security Program Management and Oversight
+  5.3 Explain processes associated with third-party risk assessment and management.
+     Rules of engagement
+
+  5.5 Explain types and purposes of audits and assessments
+     Attestation
+     Internal
+       Compliance
+       Audit committee
+       Self-assessments
+
+     External
+       Regulatory
+       Examinations
+       Assesment
+       indepedent third-party audit
+
+     Penetration testing
+       Physical
+       Offensive
+       Defensive
+       Integrated
+       Known environment
+       Partially known environment
+       Unknown environment
+       Reconnaissance
+         Passive
+         Active
+**********************************N O T E S**************************************************
+***********************************************************************************************
 Ch 6 Application Security
 -------------------------
 Domain 2: Threats, vulnerabilities, & Mitigations
