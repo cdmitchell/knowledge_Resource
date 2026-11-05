@@ -82,7 +82,19 @@ Identify & explain
     [Message-Based | Wired/Wireless Networks| Systems| Files & Images| Removable Devices| Cloud| Supply Chain]
   Attack Surfaces:
     [System| Application| Service]
+
+Explain various types of vulnerabilities:
+  Zero-day vulnerabilities are unknown to product vendors
+
 Know Threat Intelligence provides valuable insight into the threat Landscape
+    Threat feed
+      Open-source intelligence (OSINT) is acquired from publicly available sources
+      Proprietary/third-party information gathered through research, or other proprietary methods
+      Information-sharing organization
+        US: Information Sharing and Analysis Center (ISACs)
+        UK: National Protective Security Authority (NPSA)
+
+      Dark web is a network run over standard internet connections using multiple layers of encryption to provide anonymous communication.
 ***********************************************************************************************
 Ch 6 Application Security
 -------------------------
@@ -243,7 +255,7 @@ Domain 2: Threats, Vulnerabilities, & Mitigations
 
 **********************************N O T E S**************************************************
 Public key infrastructure (PKI) facilitates communication between 2 parties previously unknown to each other.
- employs hierachy of trust permit combining asymetric, symmetric, hashing & digital certificates giving us hybrid cryptography.
+ employs hierachy of trust permit combining asymmetric, symmetric, hashing & digital certificates giving us hybrid cryptography.
 
   [Public | Private] key
 
@@ -263,22 +275,22 @@ Public key infrastructure (PKI) facilitates communication between 2 parties prev
     3. Diffie-Hellman (involves two large numbers s.t. 1 < g < p; where p is a prime & g an integer)
 
   Algorithms:
-    AES
+    AES (Advanced Encryption Standard) most widely used to secure TLS protocol, wireless networks, & file/disk encryption, & other applications.
     RSA algorithm depends on factoring large prime numbers
 
   Key length make data more secure, but requires computational overhead
   Steganography hides information within images
-  Hashing
+  Hashing is a 1 way cryptographic function that accepts inputs of varying lengths & outputs a unique fixed lenght result
   Salting adds random generated value to each password before hashing
 
   Digital signatures:
-    enforce non-repudiation
+    enforce non-repudiation (verifies the item is truly from the sender)
     protects against malicious & un-intentional modification
 
   Key stretching (involves salting & hashing) is used to create encryption keys form passwords
      (e.g. thousands of iterations of salting & hashing to generate keys Password-Based Key Derivaton Function v2(PBKDF2))
 
-  Blockchainis a distributed & immutable ledger; creates a data store nobody can tamper with or destroy.
+  Blockchain is a distributed & immutable ledger; creates a data store nobody can tamper with or destroy.
   Open public ledger  stores records in a distributed manner among different systems located globally
 
   Certificates provide assurance that the people communicating are truly who they claim to be;
@@ -289,7 +301,7 @@ Public key infrastructure (PKI) facilitates communication between 2 parties prev
       as a result of needing to periodically download & cross-reference it introduces latency.
 
     Online Certificate Status Protocol (OCSP) provides real-time certificate verification.
-    Self-signed certificates for use inside an organizatio utilizing its internal CA; primarily used for testing purposes.
+    Self-signed certificates for use inside an organization utilizing its internal CA; primarily used for testing purposes.
     Third-party
     Root of trust
     Certificate signing request (CSR) generation
@@ -297,7 +309,7 @@ Public key infrastructure (PKI) facilitates communication between 2 parties prev
 
 Cryptographic attacks
   Downgrade attack used against secure communications such as TLS in an attempt to get the user to shift to less secure modes.
-  Collision
+  Collision when two hash inputs produce the same output.
   Birthday attack is a cryptographic hashes, based on the birthday theorem (x amount of people in a room share same month & day)
     probability based
 
@@ -367,6 +379,87 @@ Password best practices:
     something you [know | have | are |somewhere]
 Know how identities are claimed:
   username, certificates, tokens, SSH keys, & smartcards
+***********************************************************************************************
+Ch 9 Resilience & Physical Security
+-----------------------------------
+Domain 1: General Security Concepts
+  1.2 Summarize fundamental security concepts.
+     Physical security
+       Bollards
+       Access control vestibule
+       Fencing
+       Video surveillance
+       Security guard
+       Access badge
+       Lighting
+       Sensors
+
+Domain 2: Threats, Vulnerabilities, & Mitigations
+  2.4 Given a scenario, analyze indicators fo malicious activity.
+     Physical attacks
+       Brute force
+       Radio frequency identification (RFID) cloning
+       Environmental
+
+Domain 3: Security Architecture
+  3.1 Compare and contrastsecurity implications of different architecture models.
+     Considerations
+       Availability
+       Resilience
+       Cost
+       Responsiveness
+       Scalabiltiy
+       Ease of deployment
+       Risk transference
+       Ease of recovery
+       Patch availability
+       Inability to patch
+       Power
+       Compute
+
+  3.4 Explain the importance of resilience and recovery in security architecture.
+     High availability (Load balancing vs. clustering)
+
+     Site considerations
+       Hot
+       Cold
+       Warm
+       Geographic dispersion
+
+     Platform diversity
+     Multi-cloud systems
+     Continuity of operations
+
+     Capacity Plannning
+       People
+       Technology
+       Infrastructure
+
+     Testing
+       Tabletop exercise
+       Fail over
+       Simulation
+       Parallel processing
+
+     Backups
+       Onsite/offsite
+       Frequency
+       Encryption
+       Snapshots
+       Recovery
+       Replication
+       Journaling
+
+     Power
+       Generators
+       Uninterruptible power supply (UPS)
+
+**********************************N O T E S**************************************************
+High availability: (Load balancing vs. clustering)
+  load balancing makes multiple systems/services appear to be a single resource by redirecting traffic during system upgrades then returns traffic
+  once upgrades are complete (:. describes elasticity)
+  Clustering does something similar (makes multiple systems appear as single larger system), but doesn't distribute traffic; instead it
+  provides "redundancy through scale"
 ***********************************************************************************************
 Ch 10 Cloud & Virtualization Security
 -------------------------------------
@@ -960,10 +1053,10 @@ Domain 5: security Program Management & Oversight
 
      Consequences of non-compliance
       Fines
-       Sanctions
-       Reputational damage
-       Loss of license
-       Contractual impacts
+      Sanctions
+      Reputational damage
+      Loss of license
+      Contractual impacts
 
   5.6 Given a scenario, implement security awareness practices.
      Phishing
@@ -1009,7 +1102,7 @@ Know nature & purpose of procedures related to:
 Know maintenance Windows
 Know differences between various agreement types:
   SLA
-  MOA
+  MO[A|U]
   MSA
   NDA
   WO/SOW
@@ -1078,6 +1171,9 @@ Domain 5: Security Program Management & Oversight
 
 **********************************N O T E S**************************************************
 Risk occurs at the intersection of Threat & vulnerability
+
+Risk Indentification identifies threats & Vulnerabilities that exist in your operating environment
+
 Risk assessment is a process; performed several ways:
   One-time
    Ad-hoc (conducted in response to a specific event/situation)
@@ -1087,12 +1183,24 @@ Risk assessment is a process; performed several ways:
 
   Assessed using 2 factors:
     Likelihood/Probability (expressed as a percentage over a period of time)
-    Impact
+    Impact the severity of the consequences or damage that would occur if a specific risk materializes
 
     Risk Severity = Likelihood * Impact
 
 Risk analysis is a formalized approach to risk prioritization
   Qualitative analysis still employs Probability & Impact
+  Quantitative:
+    Exposure Factor percent % of the asset expected to be damaged
+    Single loss expectation (SLE) = AV * EF
+    Annualized loss expectancy (ALE) = SLE * ARO
+    Annualize rate of occurrence (ARO) is the number of times the risk is expected per year
+    Asset Value (AV) cost to acquire, replace, or deprecation cost of an asset
+    Probability/Likelihood percent(%) chance a threat will exploit a vulnerability of a specified period of time
+
+Risk Register:
+   Key risk indicators, metrics used to measure & provide early warning signals for increased levels of risk.
+   Risk owners, individual or entity responsible for managing & monitoring risks, including implementing necessary controls & actions to mitigate them.
+   Risk threshold, actual boundary that will trigger some action or decision.
 
 4 Risk Management strategies:
   [Acceptance    | Avoidance |  Mitigation| Transference]
@@ -1111,7 +1219,7 @@ Risk reporting involves communicating status & evolution of risks to Stakeholder
 
 Business Impact Analysis is a formal process to identify mission essential functions
    4 key meterics:
-      Recovery time objective (RTO) amont of time system can be offline before repair
+      Recovery time objective (RTO) amount of time system can be offline before repair
       Recovery point objective (RPO) amount of tolerated data loss during an outage
       Mean time to repair (MTTR)     should be less than RTO
       Mean time between failures (MTFB)
