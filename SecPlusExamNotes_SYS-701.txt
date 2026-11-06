@@ -227,6 +227,25 @@ Domain 5: Security Program Management and Oversight
          Passive
          Active
 **********************************N O T E S**************************************************
+Vulnerability scans focus on detecting high priority threats
+Penetration testing authorized legal attempts to defeat an organizations security controls & perform unauthorized activities
+Responsible disclosure program collaboration between organization & security community allowing for timely Id, reporting, & remediation of security vulnerabilities.
+
+Bug bounty program "type of responsible disclosure program" that incentivizes submissions by offering rewards to testers who discover    vulnerabilities.
+
+System/process audit
+
+Confirmation reports formed from investigation on the presence & severity of vulnerabilities.
+Prioritize, focused on categorizing vulnerabilities using CVSS & CVE
+Common Vulnerability Scoring System (CVSS) standardized approach for measuring & describing severity of security-related software flaws
+Common Vulnerability Exposures (CVE) standard nomeclature for describing security-related software flaws.
+Vulnerability classification scan system plug-ins capable of detecting thousands of possible vulnerabilities.
+Exposure factor
+Environmental variables
+Industry/organizational impact
+Risk tolerance
+
+      Threat hunting uses the attacker mind-set to search for artifacts
 ***********************************************************************************************
 Ch 6 Application Security
 -------------------------
